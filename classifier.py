@@ -1,16 +1,10 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@File    : classifier.py
-@Author  : Kevin
-@Date    : 2025/10/26
-@Description : 场景分类器.
-@Version : 1.0
-"""
+#场景分类器（规则 + LLM）
 
 import os
 from openai import OpenAI
 from config import SCENES
+from dotenv import load_dotenv  # 新增
+load_dotenv()  # 自动读取同文件夹下的 .env
 
 client = OpenAI(
     api_key=os.getenv("DASHSCOPE_API_KEY"),

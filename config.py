@@ -1,12 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@File    : config.py
-@Author  : Kevin
-@Date    : 2025/10/26
-@Description : 定义场景.
-@Version : 1.0
-"""
+#定义检索场景
 
 SCENES = {
     "hr": {

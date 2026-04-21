@@ -1,12 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@File    : app.py
-@Author  : Kevin
-@Date    : 2025/10/26
-@Description : 主程序入口.
-@Version : 1.0
-"""
+#主程序
 
 from rag_engine import MultiSceneRAG
 

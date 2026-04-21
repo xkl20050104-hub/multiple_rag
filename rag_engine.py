@@ -1,12 +1,4 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-@File    : rag_engine.py
-@Author  : Kevin
-@Date    : 2025/10/26
-@Description : 多场景RAG引擎.
-@Version : 1.0
-"""
+# 多场景RAG引擎
 
 import os
 from llama_index.core import (
@@ -26,6 +18,8 @@ from llama_index.embeddings.dashscope import (
 )
 from config import SCENES
 from classifier import classify_scene
+from dotenv import load_dotenv  # 新增
+load_dotenv()  # 自动读取同文件夹下的 .env
 
 # 设置全局 LLM 和 Embedding Model
 Settings.llm = DashScope(
