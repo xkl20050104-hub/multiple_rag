@@ -1,3 +1,1 @@
-print('xkl')
-
 print('hello')
